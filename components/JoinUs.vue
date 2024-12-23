@@ -4,7 +4,17 @@
         <p>Join the mailering list to get updates and special access.</p>
 
         <p class="feedback-message" :class="{ error: errorState }">{{ message }}</p>
-        <div class="input-box" :class="{ error: errorState }">
+        <div class="input-box desktop" :class="{ error: errorState }">
+            <input
+                placeholder="Enter your email address"
+                @input=";(message = ''), (errorState = false)"
+                v-model="email"
+                type="email"
+            />
+            <button @click="addEmail">Join the waiting list!</button>
+        </div>
+
+        <div class="input-box-mobile mobile">
             <input
                 placeholder="Enter your email address"
                 @input=";(message = ''), (errorState = false)"
@@ -74,6 +84,41 @@ h1
 p
     margin: 0 0 20px 0
 
+.input-box-mobile
+    display: flex
+    flex-direction: column
+    margin-inline: auto
+
+    &.error
+        outline: 2px solid red
+
+    button
+        background: $text-light
+        color: black
+        margin-bottom: 15px
+        border: none
+
+        padding: 10px 20px
+        border-radius: 10px
+        cursor: pointer
+
+        &:active
+            transform: translate(1px, 1px)
+
+    input
+        background: $text-light
+        padding: 10px
+        border-radius: 10px
+        margin-bottom: 10px
+        border: none
+        padding-left: 15px
+        max-width: 400px
+        min-width: 250px
+
+        flex-grow: 1
+
+        &:focus
+            outline: none
 
 .input-box
     background: $text-light
@@ -83,6 +128,7 @@ p
     padding: 5px
     border-radius: 10px
     margin-bottom: 10px
+    flex-wrap: wrap
 
     &.error
         outline: 2px solid red
@@ -119,4 +165,13 @@ p
 .disclaimer
     font-size: 0.8rem
     color: $text-dark
+
+.mobile
+    display: none
+@media (max-width: 700px)
+    .mobile
+        display: flex
+
+    .desktop
+        display: none
 </style>

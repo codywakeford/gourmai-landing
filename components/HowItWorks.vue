@@ -54,7 +54,7 @@ section
     justify-content: center
 
 .cards
-    margin-block: 75px
+    margin-block:  25px 75px
     max-width: 1400px
     margin-inline: auto
     flex-wrap: wrap
@@ -78,4 +78,13 @@ section
     p
         margin: 0
         color: $text-dark
+
+
+
+@media (max-width: 500px)
+    .card
+        flex: 1 0 220px
+
+    .section
+        margin-block: 75px
 </style>

@@ -5,7 +5,7 @@
             <p>Traditional recipe services just aren't enough anymore</p>
         </header>
 
-        <div class="row">
+        <div class="row container">
             <div class="column">
                 <div class="column">
                     <h3>Lack of personalization</h3>
@@ -99,4 +99,8 @@ h3
     padding-top: 50px
 
     justify-content: center
+
+@media (max-width: 600px)
+    .container
+        gap: 20px
 </style>

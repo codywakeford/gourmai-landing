@@ -25,14 +25,20 @@ section
 .card
     padding-block: 75px
     margin-inline: auto
+    max-width: 95%
 
 h1
     max-width: 650px
     margin: 0
-    font-size: 2rem
+    font-size: 1.75rem
 h2
     font-size: 1rem
     font-weight: normal
     margin: 0
     color: $primary
+
+@media (max-width: 750px)
+    h1
+        max-width: 90%
+        font-size: 1.25rem
 </style>

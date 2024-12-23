@@ -5,7 +5,7 @@
             <p>Why should we be the ones to make this leap?</p>
         </header>
 
-        <div class="row">
+        <div class="row container">
             <div class="column">
                 <div class="column">
                     <h3>A Vision That Goes Beyond Recipes</h3>
@@ -104,4 +104,8 @@ h3
     flex-wrap: wrap
 
     justify-content: center
+
+@media (max-width: 600px)
+    .container
+        gap: 20px
 </style>

@@ -1,6 +1,7 @@
 <template>
     <main>
         <Nav />
+
         <Hero />
         <WhyNotTraditional />
         <JoinUs />
@@ -81,6 +82,7 @@ html, body
     padding: 0
     scroll-behavior: smooth
     scroll-padding-top: 150px
+    overflow-x: hidden
 
 main
     margin-inline: auto
