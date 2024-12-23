@@ -1,0 +1,15 @@
+{
+    "functions": { "source": ".output/server" },
+    "hosting": {
+        "site": "gourmai-landing",
+        "cleanUrls": true,
+        "rewrites": [{ "source": "**", "function": "server" }],
+        "public": ".output/public",
+        "runtime": "nodejs18",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    },
+    "firestore": {
+        "rules": "firestore.rules",
+        "indexes": "firestore.indexes.json"
+    }
+}
