@@ -1,12 +1,17 @@
 <template>
     <section>
         <div class="background-image" />
-        <h3 class="coming-soon-chip">Under Construction!</h3>
+        <h3 class="coming-soon-chip">Closed Beta!</h3>
         <h1>Unlock Your Perfect Meal with Gourmai</h1>
         <h2>
             Your AI-powered recipe assistant for personalized meal plans, tailored health goals, and
             seamless grocery shopping.
         </h2>
+        <nuxt-link
+            class="join-link"
+            to="https://play.google.com/apps/internaltest/4701539507518301389"
+            >Join the closed android beta today!</nuxt-link
+        >
     </section>
 </template>
 
@@ -45,6 +50,12 @@ section
         height: 7px
         border-radius: 50%
         background: $primary
+
+.join-link
+    text-align: center
+    position: relative
+    color: $primary
+    z-index: 1000
 
 h1
     font-weight: bolder

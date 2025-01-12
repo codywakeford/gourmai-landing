@@ -9,9 +9,9 @@
 
                 <div class="center">
                     <ul>
-                        <a href="#whyAi">Why AI?</a>
-                        <a href="#whyGourmai">Why Gourmai?</a>
-                        <a href="#howItWorks">How It Works</a>
+                        <a href="/#whyAi">Why AI?</a>
+                        <a href="/#whyGourmai">Why Gourmai?</a>
+                        <a href="/#howItWorks">How It Works</a>
                         <a href="mailto:codypwakeford@gmail.com">Contact Me</a>
                     </ul>
                 </div>

@@ -108,4 +108,6 @@ h3
 @media (max-width: 600px)
     .container
         gap: 20px
+    section
+        margin-block: 50px
 </style>

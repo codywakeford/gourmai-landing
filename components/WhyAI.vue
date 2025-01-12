@@ -102,4 +102,12 @@ header
     p
         margin: 0
         color: $text-dark
+
+@media (max-width: 600px)
+    .card
+        flex: 1 0 200px
+        min-width: 0
+
+    section
+        margin-block: 50px
 </style>

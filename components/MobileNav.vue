@@ -2,7 +2,7 @@
     <section>
         <nav :class="{ active: navOpen }">
             <div class="content">
-                <a href="#" class="gourmai-title">Gourmai</a>
+                <a href="#" @click="navOpen = false" class="gourmai-title">Gourmai</a>
                 <Icon
                     @click="navOpen = !navOpen"
                     icon="iconamoon:menu-burger-horizontal"
@@ -12,11 +12,11 @@
             </div>
         </nav>
         <aside class="aside" :class="{ active: navOpen }">
-            <a @click="navOpen = false" href="#whyAi">Why AI?</a>
-            <a @click="navOpen = false" href="#whyGourmai">Why Gourmai?</a>
-            <a @click="navOpen = false" href="#howItWorks">How It Works</a>
+            <a @click="navOpen = false" href="/#whyAi">Why AI?</a>
+            <a @click="navOpen = false" href="/#whyGourmai">Why Gourmai?</a>
+            <a @click="navOpen = false" href="/#howItWorks">How It Works</a>
             <a @click="navOpen = false" href="mailto:codypwakeford@gmail.com">Contact Me</a>
-            <a @click="navOpen = false" href="#waitingList">Join the waiting list!</a>
+            <a @click="navOpen = false" href="/#waitingList">Join the waiting list!</a>
         </aside>
     </section>
 </template>

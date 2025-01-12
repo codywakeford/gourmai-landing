@@ -85,6 +85,6 @@ section
     .card
         flex: 1 0 220px
 
-    .section
-        margin-block: 75px
+    section
+        margin-block: 50px
 </style>

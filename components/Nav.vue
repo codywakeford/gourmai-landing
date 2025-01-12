@@ -1,7 +1,7 @@
 <template>
     <section>
         <DesktopNav class="desktop" />
-        <MobileNav class="mobile" />
+        <MobileNav class="mobile" ref="nav" />
     </section>
 </template>
 

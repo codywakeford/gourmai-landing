@@ -1,18 +1,7 @@
 <template>
-    <main>
-        <Nav />
-
-        <Hero />
-        <WhyNotTraditional />
-        <JoinUs />
-        <WhyAI />
-        <Quote1 />
-        <WhyGourmai />
-        <HowItWorks />
-        <JoinUs />
-        <Footer />
-    </main>
+    <NuxtPage />
 </template>
+
 <script setup lang="ts">
 import { useHead } from "#app"
 
@@ -20,6 +9,7 @@ useHead({
     title: "Gourmai | AI-Powered Recipe Assistant",
     meta: [
         // Basic meta tags
+        { name: "_foundr", content: "fd572e189ae6f02cbf5370d9066698a5" },
         {
             hid: "description",
             name: "description",

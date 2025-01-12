@@ -1,6 +1,8 @@
 <template>
     <footer class="footer">
-        <p>&copy; {{ new Date().getFullYear() }} Novatek. All rights reserved.</p>
+        <p>
+            &copy; {{ new Date().getFullYear() }} Novatek | <a href="/affiliate">Affiliate Links</a>
+        </p>
     </footer>
 </template>
 
@@ -15,12 +17,15 @@
     padding: 25px 25px
     background-color: $background
     font-size: 0.9rem
-    width: 100%
+    max-width: 100%
     margin-inline: auto
     text-align: center
-p, a
-  width: 100%
+p
   margin: 0 auto
   color: $text-dark
   text-align: center
+
+a
+    color: white
+    text-decoration: none
 </style>
